@@ -3,7 +3,7 @@ on: push
 
 env:
   GODOT_VERSION: 3.5.1
-  EXPORT_NAME: 
+  EXPORT_NAME: lynx-frontend
 
 jobs:
   export-windows:
