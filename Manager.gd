@@ -1,6 +1,6 @@
 extends Node
 
-const url = "http://server.blazej-smorawski.com:9000/send_code"
+const url = "https://server.blazej-smorawski.com/send_code"
 var headers = ["Content-Type: application/json"]
 onready var http_request = get_node("HTTPRequest")
 onready var player = get_node("../Player")
