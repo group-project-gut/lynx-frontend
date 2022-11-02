@@ -85,3 +85,7 @@ jobs:
         with:
           folder: ./build/web
           branch: gh-pages
+      - name: Deploy to itch.io
+        run: |
+            butler push ./build/web $ITCHIO_USERNAME/$ITCHIO_GAME:web
+        
