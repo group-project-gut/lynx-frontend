@@ -4,9 +4,6 @@ on: push
 env:
   GODOT_VERSION: 3.5.1
   EXPORT_NAME: lynx-frontend
-  BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-  ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
-  ITCHIO_USERNAME: ${{ secrets.ITCHIO_USERNAME }}
 
 jobs:
   export-windows:
@@ -59,7 +56,6 @@ jobs:
 
   export-web:
     name: Web Export
-    environment: itch.io
     runs-on: ubuntu-20.04
     container:
       image: barichello/godot-ci:3.5.1
@@ -89,7 +85,4 @@ jobs:
         with:
           folder: ./build/web
           branch: gh-pages
-      - name: Deploy to itch.io
-        run: |
-            butler push ./build/web $ITCHIO_USERNAME/$ITCHIO_GAME:web
         
