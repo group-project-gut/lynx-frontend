@@ -19,4 +19,4 @@ func _on_HTTPRequest_request_completed(result, response_code, headers, body):
 	if result != 0:
 		print("Error response code: " + str(response_code))
 	var output = JSON.parse(body.get_string_from_utf8()).result
-	player.parseCommands(output.stdout)
+	player.parse_commands(output.stdout)

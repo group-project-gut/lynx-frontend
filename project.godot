@@ -8,6 +8,46 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Action",
+"language": "GDScript",
+"path": "res://Actions/Action.gd"
+}, {
+"base": "Action",
+"class": "Move",
+"language": "GDScript",
+"path": "res://Actions/Move/Move.gd"
+}, {
+"base": "Reference",
+"class": "MoveDown",
+"language": "GDScript",
+"path": "res://Actions/Move/Directions/MoveDown.gd"
+}, {
+"base": "Reference",
+"class": "MoveLeft",
+"language": "GDScript",
+"path": "res://Actions/Move/Directions/MoveLeft.gd"
+}, {
+"base": "Reference",
+"class": "MoveRight",
+"language": "GDScript",
+"path": "res://Actions/Move/Directions/MoveRight.gd"
+}, {
+"base": "Reference",
+"class": "MoveUp",
+"language": "GDScript",
+"path": "res://Actions/Move/Directions/MoveUp.gd"
+} ]
+_global_script_class_icons={
+"Action": "",
+"Move": "",
+"MoveDown": "",
+"MoveLeft": "",
+"MoveRight": "",
+"MoveUp": ""
+}
+
 [application]
 
 config/name="lynx-frontend"
